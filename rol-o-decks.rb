@@ -1,10 +1,10 @@
 class RolODecks < Formula
     desc "Index and search slides in Powerpoint presentations"
     homepage "https://github.com/mr-tim/rol-o-decks"
-    url "https://github.com/mr-tim/rol-o-decks/archive/v0.0.1.zip"
-    sha256 "1bd6068f26aa968cd2abcc3b13e44710854f5e2c01d3934ce6adb04e68bdd956"
-    depends_on "thought-machine/please/please"
-    depends_on "elm"
+    url "https://github.com/mr-tim/rol-o-decks/archive/v0.0.2.zip"
+    sha256 "7db4583f4eae1f783788c26b5b4ddee4841adcc3a6f88e0f872734926775d9a0"
+    depends_on "thought-machine/please/please" => :build
+    depends_on "elm" => :build
 
     def install
         system "plz build //cmd/main:rol-o-decks"
